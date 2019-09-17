@@ -128,6 +128,28 @@ body {
   }
 }
 
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px)
+  }
+
+  80% {
+    transform: translateY(-5px)
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.btn-animated {
+  animation: moveInBottom 2s ease-out;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+        /* applies 0% animation styles before animation starts. 
+}
+
 .btn:link,
 .btn:visited {
   text-transform: uppercase;
@@ -136,6 +158,8 @@ body {
   display: inline-block;
   margin-top: 60px;
   transition: all 0.5s;
+
+  position: relative;
 }
 
 .btn:hover {
@@ -152,4 +176,26 @@ body {
   background-color: #FFF;
   color: #777;
   border-radius: 200px;
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 200px;
+  background-color: #FFF;
+  transition: all 0.4s;
+}
+
+/* .btn-white::after {
+} */
+
+.btn:hover::after {
+  transform: scale(1.2, 1.6);
+  opacity: 0
 }
