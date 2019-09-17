@@ -49,6 +49,7 @@ body {
 
 .text-box {
   position: absolute;
+  text-align: center;
   
   /* in relation to parent element */
   top: 50%;
@@ -125,4 +126,30 @@ body {
     opacity: 1;
     transform: translate(0)
   }
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  margin-top: 60px;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.btn-white {
+  background-color: #FFF;
+  color: #777;
+  border-radius: 200px;
 }
