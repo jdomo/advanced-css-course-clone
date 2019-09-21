@@ -14,7 +14,7 @@ Dark green: #28b485
 }
 
 html {
-  font-size: 1rem;
+  font-size: 62.5%;   /* 10px (desired size) divided by 16px (default browser size) */
 }
 
 /* use body tag here to use power of inheritance for global font settings */
@@ -72,7 +72,7 @@ body {
   display: block;
   font-size: 6.0rem;
   font-weight: 400;
-  letter-spacing: .035rem;
+  letter-spacing: 3.5rem;
 
   /* assign animation and duration */
   animation-name: moveInLeft;
@@ -88,7 +88,7 @@ body {
 
 .heading-primary-sub {
   display: block;
-  font-size: 2.0rem;
+  font-size: 2rem;
   font-weight: 700;
   letter-spacing: 1.74rem;
 
@@ -161,8 +161,9 @@ body {
   text-decoration: none;
   padding: 1.5rem 4rem;
   margin-top: 6rem;
+  font-size: 1.6rem;
 
-  transition: all 0.5s;
+  transition: all .5s;
 
   /* center as text */
   display: inline-block;
@@ -180,7 +181,7 @@ body {
   /* appears closer to page when clicked/active - 
                                       shadow gets tighter and sinks from hover position */
   transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,0.2);
 }
 
 .btn-white {
@@ -204,7 +205,7 @@ body {
   border-radius: 20rem;
 
   /* pseudo-element disappears as hover changes take effect*/
-  transition: all 0.4s;
+  transition: all .4s;
 }
 
 .btn:hover::after {
