@@ -13,11 +13,15 @@ Dark green: #28b485
   box-sizing: border-box;
 }
 
+html {
+  font-size: 1rem;
+}
+
 /* use body tag here to use power of inheritance for global font settings */
 
 body {
   font-family: 'Lato', sans-serif;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.7;
   color: #777;
@@ -66,7 +70,7 @@ body {
 
 .heading-primary-main {
   display: block;
-  font-size: 60px;
+  font-size: 6.0rem;
   font-weight: 400;
   letter-spacing: 35px;
 
@@ -84,7 +88,7 @@ body {
 
 .heading-primary-sub {
   display: block;
-  font-size: 20px;
+  font-size: 2.0rem;
   font-weight: 700;
   letter-spacing: 17.4px;
 
