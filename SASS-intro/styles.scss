@@ -12,16 +12,25 @@ $color-text-dark: #333;
 $color-text-light: #EEE;
 $width-button: 150px;
 
-
-nav {
-  margin: 30px;
-  background-color: $color-primary;
-    
+@mixin clearfix {
   &::after {
     content: "";
     clear: both;
     display: table;
   }
+}
+
+@mixin style-link-text($color) {
+  text-transform: uppercase;
+  width: $width-button;
+  color: $color;
+}
+
+nav {
+  margin: 30px;
+  background-color: $color-primary;
+  
+  @include clearfix;
 }
 
 .navigation {
@@ -37,9 +46,7 @@ nav {
     }
     
     a {
-      text-decoration: none;
-      text-transform: uppercase;
-      color: $color-text-dark;
+      @include style-link-text($color-text-dark)
     }
   }
 }
@@ -57,9 +64,7 @@ nav {
   text-align: center;
   text-decoration: none;
   border-radius: 100px;
-  text-transform: uppercase;
-  width: $width-button;
-  color: $color-text-light;
+  @include style-link-text($color-text-light)
 }
 
 .btn-main {
