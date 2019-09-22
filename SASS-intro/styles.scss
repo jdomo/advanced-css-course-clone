@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0
+}
+
+//variable
+  //salmonish colour
+$color-primary: #ED4C4C;
+$color-secondary: #F08A5D;
+$color-tertiary: #B83B5E;
+$color-text-dark: #333;
+$color-text-light: #EEE;
+$width-button: 150px;
+
+
+nav {
+  margin: 30px;
+  background-color: $color-primary;
+    
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+.navigation {
+  list-style: none;
+  float: left;
+  //nested selectors
+  li {
+    display: inline-block;
+    margin-left: 30px;
+    
+    &:first-child {
+      margin-left: 0;
+    }
+    
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $color-text-dark;
+    }
+  }
+}
+
+.button {
+  float: right
+}
+
+
+
+.btn-main:link,
+.btn-hot:link {
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 100px;
+  text-transform: uppercase;
+  width: $width-button;
+  color: $color-text-light;
+}
+
+.btn-main {
+  transition: all .3s;
+  
+  &:link {
+    background: $color-secondary;
+  }
+  
+  &:hover {
+    background: darken($color-secondary, 5%);
+  }
+}
+
+.btn-hot {
+  transition: all .3s;
+  
+  &:link {
+    background: $color-tertiary;
+  }
+  
+  &:hover {
+    background: lighten($color-tertiary, 5%);
+  }
+}
+
+
+/* 
+NOTES
+
+- nested selectors used instead of a separate rule, i.e.
+.navigation li {} 
+  
+- & symbol represents selector string, ie .navigation li:first-child
+  - used for pseudo-classes
+  
+  */
