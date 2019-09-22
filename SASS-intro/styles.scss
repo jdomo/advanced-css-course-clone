@@ -105,6 +105,7 @@ NOTES
 - & symbol represents selector string, ie .navigation li:first-child
   - used for pseudo-classes
 
-- mixins copy the code to the selector, placeholders copy the selector to the code.
+- mixins copy the code to the selector, placeholders/extends copy the selector to the code.
+-- bad practice to use extends on elements that aren't related somehow, i.e. buttons OK, a button and a link not OK
   
   */
