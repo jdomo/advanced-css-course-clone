@@ -12,6 +12,7 @@
 
 //could be argued that global font-size belongs in typography, but it's more of a general setting 
 //as seen when used for padding, animations etc
+
 html {
   font-size: 62.5%;   /* 10px (desired size) divided by 16px (default browser size) */
 }
