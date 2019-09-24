@@ -1,0 +1,69 @@
+.btn {
+  &--animated {
+    animation: moveInBottom 2s ease-out;
+    animation-delay: 0.5s;
+  
+    /* applies 0% animation styles before animation starts. */
+    animation-fill-mode: backwards;
+  }
+  
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    margin-top: 6rem;
+    font-size: 1.6rem;
+  
+    transition: all .5s;
+  
+    /* center as text */
+    display: inline-block;
+  
+    /* so pseudo-element can hide behind using absolute positioning (first parent) */
+    position: relative;
+  }
+  
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($color-black,0.2);
+  
+    &::after {
+      /* pseudo-element grows and disappears from behind .btn */
+      transform: scale(1.2, 1.6);
+      opacity: 0
+    }
+  }
+  
+  &:active {
+    /* appears closer to page when clicked/active - 
+                                        shadow gets tighter and sinks from hover position */
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba($color-black,0.2);
+  }
+  
+  &--white {
+    background-color: $color-white;
+    color: $color-grey-dark;
+    border-radius: 20rem;
+  }
+  
+  &::after {
+    content: "";            /* necessary line that doesn't seem to do anything else */
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    background-color: $color-white;
+  
+    /* hide behind parent element & */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 20rem;
+  
+    /* pseudo-element disappears as hover changes take effect*/
+    transition: all .4s;
+  }
+
+}
