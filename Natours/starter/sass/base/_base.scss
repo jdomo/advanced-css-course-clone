@@ -13,6 +13,9 @@
 //could be argued that global font-size belongs in typography, but it's more of a general setting 
 //as seen when used for padding, animations etc
 
+/*** !!! THIS IS WHAT THE REMS ARE BASED ON - 
+    16px is default. We want 10px default. 
+      10/16 = 0.625 !!! ***/
 html {
   font-size: 62.5%;   /* 10px (desired size) divided by 16px (default browser size) */
 }
