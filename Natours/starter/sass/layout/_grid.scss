@@ -1,6 +1,5 @@
 .row {
   max-width: $grid-width;        //10px * 114 (1140 is the size we want)
-  background-color: #eee;
   margin: 0 auto; 
   
   &:not(:last-child) {
