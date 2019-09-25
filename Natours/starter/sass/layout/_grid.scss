@@ -10,8 +10,6 @@
   @include clearfix; //without this, row is collapsed due to floats on contained elements (no height)
 
   [class^="col-"] {
-    background-color: #ED4C4C;
-    color: $color-white;
     float: left;
     &:not(:last-child) {
       margin-right: $gutter-horizontal;

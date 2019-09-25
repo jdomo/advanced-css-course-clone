@@ -3,6 +3,7 @@
   padding: 25rem 0;
 
   //need to move section up so it covers the polygon wedge
-    //header height is 95vh, header bottom-right clips at 75vh. 95-75 = 20. use negative margin
+    //header height is 95vh, header bottom-right clips at 75vh. 95 - 75 = 20
+    //use negative top margin to move section up. 
   margin-top: -20vh;
 }
