@@ -1,11 +1,13 @@
 .composition {
-  position: relative;
+  position: relative;     //allow for absolute positioning of child elements
   &__photo {
     width: 55%;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
     border-radius: 2px;
       //allow photos to be positioned on top of each other
     position: absolute;
+    z-index: 10;
+    transition: all .2s;
 
     &--p1 {
       left: 0;
@@ -19,5 +21,18 @@
       left: 20%;
       top: 10rem;
     }
+
+    &:hover {
+      outline: 1.5rem solid $color-primary;
+      outline-offset: 2rem;         //creates space between element and outline
+      transform: scale(1.05) translateY(.5rem);
+      box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+      z-index: 20;                  //higher z-index on hovered element so it stays on top
+    }
+  }
+
+  //when composition div is hovered, select all contained elements that are not being hovered
+  &:hover &__photo:not(:hover) {
+    transform: scale(.95)
   }
 }
