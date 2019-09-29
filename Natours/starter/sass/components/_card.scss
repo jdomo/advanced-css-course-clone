@@ -5,17 +5,19 @@
   height: 50rem;
 
   &__side {
-    color: #fff;
+    color: $color-white;
     font-size: 2rem;
     height: 50rem;
     transition: all .8s ease;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
     
-    position: absolute;
+    position: absolute;   //make card sides sit on top of one another
     top: 0;
     left: 0;
 
-    width: 100%;
-    backface-visibility: hidden;
+    width: 100%;   //take up whole div space instead of just containing text
+    backface-visibility: hidden; //hides other side of card so that different rotation is hidden
 
     &--front {
       background-color: $color-white;
