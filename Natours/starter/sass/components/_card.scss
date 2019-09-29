@@ -1,8 +1,10 @@
 .card {
-  perspective: 150rem;
-  -moz-perspective: 50rem;
-  position: relative;
-  height: 50rem;
+
+//FUNCTIONALITY
+  perspective: 150rem;        //makes animation look more 3d
+  -moz-perspective: 50rem;    //for mozilla
+  position: relative;         //allow for absolute positioning of child elements
+  height: 50rem;              //so .card div doesn't collapse due to absolute positioning
 
   &__side {
     color: $color-white;
@@ -12,7 +14,7 @@
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
     
-    position: absolute;   //make card sides sit on top of one another
+    position: absolute;   //make card sides sit atop of one another
     top: 0;
     left: 0;
 
@@ -39,10 +41,15 @@
   }
 
   &:hover &__side--front {
-    transform: rotateY(180deg);
+    transform: rotateY(-180deg);
   }
 
   &:hover &__side--back {
     transform: rotateY(0deg);
+  }
+
+//FRONT-SIDE STYLING
+  &__image {
+    
   }
 }
