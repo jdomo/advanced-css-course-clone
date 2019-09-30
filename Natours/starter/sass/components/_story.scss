@@ -56,7 +56,7 @@
 
   &:hover &__img {
     -webkit-filter: blur(5px);
-    filter: blur(5px);
+    filter: blur(5px) brightness(80%);
     transform: scale(.95) center;
   }
 
