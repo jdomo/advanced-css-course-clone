@@ -12,7 +12,6 @@
     text-transform: uppercase;
     text-decoration: none;
     padding: 1.5rem 4rem;
-    margin-top: 6rem;
     font-size: $default-font-size;
   
     transition: all .5s;
@@ -47,13 +46,19 @@
     color: $color-grey-dark;
     border-radius: 20rem;
   }
+
+  &--green {
+    background-color: $color-primary;
+    color: $color-white;
+    border-radius: 20rem;
+  }
   
   &::after {
     content: "";            /* necessary line that doesn't seem to do anything else */
     display: inline-block;
     height: 100%;
     width: 100%;
-    background-color: $color-white;
+    background-color: inherit;
   
     /* hide behind parent element & */
     position: absolute;
