@@ -142,8 +142,8 @@ body {
   padding: 20rem 0 15rem 0; }
 
 .section-stories {
-  background-color: #f7f7f7;
-  padding-bottom: 10rem; }
+  padding-bottom: 10rem;
+  position: relative; }
 
 .btn--animated {
   animation: moveInBottom 2s ease-out;
@@ -406,6 +406,15 @@ body {
     -webkit-filter: blur(5px);
     filter: blur(5px) brightness(80%);
     transform: translateX(-3.5rem) scale(1); }
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .2; }
 
 .header {
   position: relative;

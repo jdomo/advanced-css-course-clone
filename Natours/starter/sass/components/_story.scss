@@ -58,7 +58,7 @@
   &:hover &__img {
     -webkit-filter: blur(5px);
     filter: blur(5px) brightness(80%);
-    transform: translateX(-3.5rem) scale(1.0);
+    transform: translateX(-3.5rem) scale(1.0);  //same translate; keep image from moving back to original position on hover
   }
 
 }
