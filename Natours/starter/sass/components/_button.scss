@@ -75,10 +75,10 @@
     &:link,
     &:visited {
       font-size: $default-font-size;
-      color: $color-primary;
+      color: $color-primary-dark;
       display: inline-block;
       text-decoration: none;
-      border: 1px solid $color-primary-light;
+      border: 1px solid $color-primary-dark;
       border-bottom: 1px solid $color-primary;    //very small measurements in px are OK
       padding: 5px;
       border-radius: 3px;

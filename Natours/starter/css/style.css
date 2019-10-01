@@ -205,10 +205,10 @@ body {
 
 .btn--text:link, .btn--text:visited {
   font-size: 1.6rem;
-  color: #55c57a;
+  color: #28b485;
   display: inline-block;
   text-decoration: none;
-  border: 1px solid #7ed56f;
+  border: 1px solid #28b485;
   border-bottom: 1px solid #55c57a;
   padding: 5px;
   border-radius: 3px;
@@ -415,7 +415,7 @@ body {
   height: 100%;
   width: 100%;
   z-index: -1;
-  opacity: .2; }
+  opacity: .15; }
   .bg-video__content {
     height: 100%;
     width: 100%;
