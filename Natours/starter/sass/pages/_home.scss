@@ -28,11 +28,13 @@
 
 .section-tours {
   margin-top: -14vh;
+  // background-color: $color-grey-light;
   background-color: $color-grey-light;
-  padding: 20rem 0 8rem 0;
+  padding: 20rem 0 4rem 0;
 }
 
 .section-stories {
+  background-image: linear-gradient($color-grey-light 1%, transparent 12%);  
   padding-top: 6rem;
   padding-bottom: 8rem;
   position: relative;
