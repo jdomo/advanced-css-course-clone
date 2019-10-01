@@ -143,7 +143,7 @@ body {
 
 .section-stories {
   background-color: #f7f7f7;
-  padding: 15rem 0; }
+  padding-bottom: 10rem; }
 
 .btn--animated {
   animation: moveInBottom 2s ease-out;
@@ -381,7 +381,8 @@ body {
     position: relative; }
   .story__img {
     height: 100%;
-    transform: translateX(-3.5rem);
+    transform: translateX(-3.5rem) scale(1.2);
+    transform-origin: center;
     transition: all .5s;
     backface-visibility: hidden; }
   .story__text {
@@ -404,7 +405,7 @@ body {
   .story:hover .story__img {
     -webkit-filter: blur(5px);
     filter: blur(5px) brightness(80%);
-    transform: scale(0.95) center; }
+    transform: translateX(-3.5rem) scale(1); }
 
 .header {
   position: relative;
