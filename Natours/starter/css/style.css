@@ -142,7 +142,8 @@ body {
   padding: 20rem 0 15rem 0; }
 
 .section-stories {
-  padding-bottom: 10rem;
+  padding-top: 10rem;
+  padding-bottom: 8rem;
   position: relative; }
 
 .btn--animated {
@@ -364,7 +365,7 @@ body {
   width: 75%;
   margin: 0 auto;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
-  background-color: #FFF;
+  background-color: rgba(255, 255, 255, 0.6);
   border-radius: 3px;
   padding: 6rem 6rem 6rem 9rem;
   font-size: 1.6rem;
@@ -415,6 +416,10 @@ body {
   width: 100%;
   z-index: -1;
   opacity: .2; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
 
 .header {
   position: relative;
