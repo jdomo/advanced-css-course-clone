@@ -15,7 +15,7 @@
         width: 100%;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
-        border-radius: 3px;
+        border-radius: $border-radius-sml;
         overflow: hidden;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
@@ -168,7 +168,7 @@
             only screen and (hover: none) {
 
         height: auto;
-        border-radius: 3px;
+        border-radius: $border-radius-sml;
         background-color: $color-white;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
         

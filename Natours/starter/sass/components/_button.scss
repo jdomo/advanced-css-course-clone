@@ -81,7 +81,7 @@
       border: 1px solid $color-primary-dark;
       border-bottom: 1px solid $color-primary;    //very small measurements in px are OK
       padding: 5px;
-      border-radius: 3px;
+      border-radius: $border-radius-sml;
       transition: all 0.4s;
     }
 

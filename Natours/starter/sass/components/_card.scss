@@ -9,7 +9,7 @@
   &__side {
     height: 52rem;  
     transition: all .8s ease;
-    border-radius: 3px;
+    border-radius: $border-radius-sml;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
     overflow: hidden;             //maintains border-radius when image overflows them
     
