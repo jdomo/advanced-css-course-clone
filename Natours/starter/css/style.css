@@ -147,6 +147,16 @@ body {
   padding-bottom: 8rem;
   position: relative; }
 
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+
+.book {
+  background-image: url("../img/nat-10.jpg");
+  background-size: 100%;
+  border-radius: 3px;
+  height: 50rem; }
+
 .btn--animated {
   animation: moveInBottom 2s ease-out;
   animation-delay: 0.5s;

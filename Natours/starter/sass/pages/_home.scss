@@ -38,3 +38,16 @@
   padding-bottom: 8rem;
   position: relative;
 }
+
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+}
+
+.book {
+  background-image: url('../img/nat-10.jpg');
+  background-size: 100%;        //same as cover
+  border-radius: $border-radius-sml;
+
+  height: 50rem;
+}
