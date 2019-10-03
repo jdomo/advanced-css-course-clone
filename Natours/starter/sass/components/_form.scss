@@ -34,7 +34,7 @@
   &__label {
     font-size: 1.2rem;
     font-weight: 700;
-
+    display: inline-block;
     //line up label with placeholder
     margin-left: 2rem;
     margin-top: .7rem;
@@ -50,5 +50,4 @@
     visibility: hidden;         //we need opacity here because we can't animate visibility  
     transform: translateY(-4rem);
   }
-
 }
