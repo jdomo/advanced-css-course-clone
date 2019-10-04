@@ -105,22 +105,22 @@ body {
     margin-bottom: 3rem; }
 
 .u-center-text {
-  text-align: center; }
+  text-align: center !important; }
 
 .u-margin-bottom-lg {
-  margin-bottom: 8rem; }
+  margin-bottom: 8rem !important; }
 
 .u-margin-bottom-med {
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem !important; }
 
 .u-margin-bottom-sml {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem !important; }
 
 .u-margin-top-med {
-  margin-top: 1rem; }
+  margin-top: 1rem !important; }
 
 .u-margin-top-lg {
-  margin-top: 6rem; }
+  margin-top: 6rem !important; }
 
 .bg-video {
   position: absolute;
@@ -141,7 +141,7 @@ body {
   /* applies 0% animation styles before animation starts. */
   animation-fill-mode: backwards; }
 
-.btn:link, .btn:visited {
+.btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
@@ -150,7 +150,10 @@ body {
   /* center as text */
   display: inline-block;
   /* so pseudo-element can hide behind using absolute positioning (first parent) */
-  position: relative; }
+  position: relative;
+  cursor: pointer;
+  border: 0;
+  font-family: inherit; }
 
 .btn:hover {
   transform: translateY(-3px);
@@ -558,7 +561,7 @@ body {
   background-size: 100%;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-  height: 50rem; }
+  height: 53rem; }
   .book__form {
     width: 50%;
     padding: 6rem; }

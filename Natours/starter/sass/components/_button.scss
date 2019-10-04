@@ -1,4 +1,5 @@
 .btn {
+  
   &--animated {
     animation: moveInBottom 2s ease-out;
     animation-delay: 0.5s;
@@ -7,6 +8,7 @@
     animation-fill-mode: backwards;
   }
   
+  &,      //use .btn class
   &:link,
   &:visited {
     text-transform: uppercase;
@@ -21,6 +23,11 @@
   
     /* so pseudo-element can hide behind using absolute positioning (first parent) */
     position: relative;
+
+    //Change for <button> element on form
+    cursor: pointer;
+    border: 0;
+    font-family: inherit;
   }
   
   &:hover {
