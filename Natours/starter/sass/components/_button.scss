@@ -8,7 +8,7 @@
     animation-fill-mode: backwards;
   }
   
-  &,      //use .btn class
+  &,      //include plain .btn class
   &:link,
   &:visited {
     text-transform: uppercase;
@@ -24,7 +24,7 @@
     /* so pseudo-element can hide behind using absolute positioning (first parent) */
     position: relative;
 
-    //Change for <button> element on form
+    //Change for <button> element on form - necessary for proper form function
     cursor: pointer;
     border: 0;
     font-family: inherit;
