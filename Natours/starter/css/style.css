@@ -476,6 +476,43 @@ body {
     filter: blur(5px) brightness(80%);
     transform: translateX(-3.5rem) scale(1); }
 
+.footer {
+  background-color: #333;
+  padding: 7rem 0;
+  font-size: 1.4rem; }
+  .footer__logo-box {
+    text-align: center;
+    margin-bottom: 8rem; }
+  .footer__logo {
+    height: 15rem; }
+  .footer__navigation {
+    border-top: 1px solid #777;
+    padding-top: 2rem;
+    display: inline-block; }
+  .footer__list {
+    list-style: none; }
+  .footer__item {
+    display: inline-block; }
+    .footer__item:not(:last-child) {
+      margin-right: 1.5rem; }
+  .footer__link {
+    transition: all .2s; }
+  .footer__link:link, .footer__link:visited {
+    color: #55c57a;
+    text-decoration: none;
+    display: inline-block; }
+  .footer__link:hover, .footer__link:active {
+    color: #7ed56f;
+    background-color: #333;
+    box-shadow: 0 1rem 2rem #000;
+    transform: rotate(2deg) scale(1.1); }
+  .footer__copyright {
+    border-top: 1px solid #777;
+    padding-top: 2rem;
+    display: inline-block;
+    width: 80%;
+    float: right; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
