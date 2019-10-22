@@ -18,9 +18,14 @@
       10/16 = 0.625 !!! ***/
 html {
   font-size: 62.5%;   /* 10px (desired size) divided by 16px (default browser size) */
+
+  @include respond(phone) {
+    font-size: 50%;
+  }
 }
 
 /* use body tag here to use power of inheritance for global font settings */
 body {
   box-sizing: border-box;
 }
+
