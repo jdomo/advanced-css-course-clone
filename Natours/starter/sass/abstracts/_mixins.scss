@@ -23,10 +23,6 @@
 1800px+: big desktop
 */
 
-@mixin respond-phone {
-  @media (max-width: 600px) { @content };
-}
-
 //BEST PRACTICE - use breakpoint as a parameter
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
