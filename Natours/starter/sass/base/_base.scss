@@ -22,6 +22,15 @@ html {
   @include respond(phone) {
     font-size: 50%;
   }
+  @include respond(tab-port) {
+    font-size: 60%;
+  }
+  @include respond(tab-land) {
+    font-size: 70%;
+  }
+  @include respond(big-desktop) {
+    font-size: 80%;
+  }
 }
 
 /* use body tag here to use power of inheritance for global font settings */
